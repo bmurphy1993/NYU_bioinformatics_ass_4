@@ -1,0 +1,991 @@
+LINE 501 : 2020-11-12 15:34:44,858 [INFO    ] Parsing data files for GSEA.............................
+LINE 205 : 2020-11-12 15:34:44,860 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2020-11-12 15:34:45,304 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 307 171
+LINE 813 : 2020-11-12 15:34:45,306 [DEBUG   ] Starting new HTTPS connection (1): maayanlab.cloud:443
+LINE 393 : 2020-11-12 15:34:45,685 [DEBUG   ] https://maayanlab.cloud:443 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 185 : 2020-11-12 15:34:45,774 [INFO    ] Downloading and generating Enrichr library gene sets......
+LINE 205 : 2020-11-12 15:34:45,776 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2020-11-12 15:34:45,936 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/geneSetLibrary?mode=text&libraryName=MSigDB_Hallmark_2020 HTTP/1.1" 307 171
+LINE 813 : 2020-11-12 15:34:45,938 [DEBUG   ] Starting new HTTPS connection (1): maayanlab.cloud:443
+LINE 393 : 2020-11-12 15:34:48,125 [DEBUG   ] https://maayanlab.cloud:443 "GET /Enrichr/geneSetLibrary?mode=text&libraryName=MSigDB_Hallmark_2020 HTTP/1.1" 200 None
+LINE 135 : 2020-11-12 15:34:51,595 [INFO    ] 0002 gene_sets have been filtered out when max_size=500 and min_size=15
+LINE 505 : 2020-11-12 15:34:51,595 [INFO    ] 0048 gene_sets used for further statistical testing.....
+LINE 506 : 2020-11-12 15:34:51,595 [INFO    ] Start to run GSEA...Might take a while..................
+LINE 465 : 2020-11-12 15:34:51,596 [DEBUG   ] Start to compute enrichment scores......................
+LINE 489 : 2020-11-12 15:34:51,596 [DEBUG   ] Start to compute es and esnulls........................
+LINE 652 : 2020-11-12 15:35:09,924 [DEBUG   ] Start to compute pvals..................................
+LINE 656 : 2020-11-12 15:35:09,925 [DEBUG   ] Start to compute nes and nesnull........................
+LINE 660 : 2020-11-12 15:35:09,928 [DEBUG   ] Start to compute fdrs..................................
+LINE 634 : 2020-11-12 15:35:09,933 [DEBUG   ] Statistical testing finished.............................
+LINE 514 : 2020-11-12 15:35:09,934 [INFO    ] Start to generate gseapy reports, and produce figures...
+LINE 1246: 2020-11-12 15:35:10,638 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=14.0.
+LINE 1258: 2020-11-12 15:35:10,639 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,640 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,640 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,640 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,640 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,641 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,642 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,642 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+LINE 1258: 2020-11-12 15:35:10,642 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+LINE 1258: 2020-11-12 15:35:10,642 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,642 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,643 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,643 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,643 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,644 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,644 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,644 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,644 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,645 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,645 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,645 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+LINE 1258: 2020-11-12 15:35:10,645 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,645 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,646 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,646 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+LINE 1258: 2020-11-12 15:35:10,646 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,646 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,646 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,647 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,648 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+LINE 1258: 2020-11-12 15:35:10,648 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,648 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:35:10,648 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,648 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:35:10,649 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+LINE 1258: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+LINE 1258: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+LINE 1258: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+LINE 1281: 2020-11-12 15:35:10,650 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=14.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+LINE 677 : 2020-11-12 15:35:11,876 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:12,048 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:12,049 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:12,049 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:12,095 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:12,096 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:13,406 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:13,580 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:13,581 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:13,581 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:13,627 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:13,627 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:15,048 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:15,222 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:15,223 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:15,223 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:15,270 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:15,270 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:16,523 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:16,696 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:16,697 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:16,697 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:16,742 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:16,742 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:18,046 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:18,239 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:18,240 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:18,240 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:18,288 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:18,288 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:19,573 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:19,758 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:19,759 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:19,759 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:19,804 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:19,805 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:21,289 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:21,481 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:21,482 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:21,482 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:21,527 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:21,527 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:22,968 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:23,254 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:23,254 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:23,255 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:23,307 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:23,307 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:24,553 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:24,729 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:24,730 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:24,730 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:24,775 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:24,775 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:26,022 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:26,206 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:26,207 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:26,207 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:26,253 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:26,254 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:27,537 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:27,718 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:27,719 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:27,719 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:27,764 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:27,764 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:29,038 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:29,222 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:29,223 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:29,223 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:29,270 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:29,270 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:30,519 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:30,695 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:30,696 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:30,696 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:30,741 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:30,741 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:31,537 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:31,711 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:31,711 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:31,712 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:31,757 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:31,757 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:33,014 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:33,210 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:33,211 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:33,211 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:33,257 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:33,257 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:34,581 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:34,776 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:34,777 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:34,777 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:34,819 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:34,820 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:36,080 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:36,263 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:36,264 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:36,264 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:36,309 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:36,309 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:37,659 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:37,834 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:37,835 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:37,835 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:37,880 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:37,880 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:39,254 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:39,432 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:39,433 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:39,433 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:39,478 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:39,479 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 15:35:40,922 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 15:35:41,103 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 15:35:41,104 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 15:35:41,104 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 15:35:41,149 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 15:35:41,150 [DEBUG   ] Writing TrueType font.
+LINE 526 : 2020-11-12 15:35:41,203 [INFO    ] Congratulations. GSEApy runs successfully................
+
+LINE 1246: 2020-11-12 15:46:04,881 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=5.5.
+LINE 1258: 2020-11-12 15:46:04,883 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,883 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,883 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,883 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,884 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,884 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,884 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,884 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,884 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,885 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,885 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,885 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,885 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+LINE 1258: 2020-11-12 15:46:04,885 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+LINE 1258: 2020-11-12 15:46:04,886 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,886 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,886 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,886 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,886 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,887 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,888 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+LINE 1258: 2020-11-12 15:46:04,888 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,888 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,888 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,888 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,889 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,890 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,890 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,890 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,890 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+LINE 1258: 2020-11-12 15:46:04,890 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,891 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,891 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,891 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+LINE 1258: 2020-11-12 15:46:04,891 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,891 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+LINE 1258: 2020-11-12 15:46:04,892 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,892 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+LINE 1258: 2020-11-12 15:46:04,892 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,892 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,892 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+LINE 1258: 2020-11-12 15:46:04,893 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+LINE 1258: 2020-11-12 15:46:04,893 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,893 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+LINE 1258: 2020-11-12 15:46:04,893 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+LINE 1281: 2020-11-12 15:46:04,893 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=5.5 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+LINE 1246: 2020-11-12 15:46:04,897 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=6.0.
+LINE 1258: 2020-11-12 15:46:04,898 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,898 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,898 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,898 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,898 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,899 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,899 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,899 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,899 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,899 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,900 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,900 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,900 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+LINE 1258: 2020-11-12 15:46:04,900 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+LINE 1258: 2020-11-12 15:46:04,900 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,901 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,901 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,901 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,901 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,901 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,902 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+LINE 1258: 2020-11-12 15:46:04,903 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,903 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,903 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,903 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+LINE 1258: 2020-11-12 15:46:04,903 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,904 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,905 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,905 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,905 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+LINE 1258: 2020-11-12 15:46:04,905 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,905 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 15:46:04,906 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,906 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+LINE 1258: 2020-11-12 15:46:04,906 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,906 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+LINE 1258: 2020-11-12 15:46:04,906 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,907 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+LINE 1258: 2020-11-12 15:46:04,907 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 15:46:04,907 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 15:46:04,907 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+LINE 1258: 2020-11-12 15:46:04,907 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+LINE 1258: 2020-11-12 15:46:04,908 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 15:46:04,908 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+LINE 1258: 2020-11-12 15:46:04,908 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+LINE 1281: 2020-11-12 15:46:04,908 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=6.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+LINE 1246: 2020-11-12 16:09:46,409 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=12.0.
+LINE 1258: 2020-11-12 16:09:46,410 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,410 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,410 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,410 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,410 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,411 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,411 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,411 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,411 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,411 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,412 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,412 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,412 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.335
+LINE 1258: 2020-11-12 16:09:46,412 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.335
+LINE 1258: 2020-11-12 16:09:46,412 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,413 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.05
+LINE 1258: 2020-11-12 16:09:46,414 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,415 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,415 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,415 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.05
+LINE 1258: 2020-11-12 16:09:46,416 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,416 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,416 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,416 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,417 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,417 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,417 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,417 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,417 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,418 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.535
+LINE 1258: 2020-11-12 16:09:46,418 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,418 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:46,418 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,418 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.335
+LINE 1258: 2020-11-12 16:09:46,419 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,419 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.05
+LINE 1258: 2020-11-12 16:09:46,419 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,419 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.25
+LINE 1258: 2020-11-12 16:09:46,419 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:46,420 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:46,420 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.05
+LINE 1258: 2020-11-12 16:09:46,420 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.25
+LINE 1258: 2020-11-12 16:09:46,420 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:46,420 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.335
+LINE 1258: 2020-11-12 16:09:46,421 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.535
+LINE 1281: 2020-11-12 16:09:46,421 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=12.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf') with score of 2.050000.
+LINE 1246: 2020-11-12 16:09:53,435 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=8.0.
+LINE 1258: 2020-11-12 16:09:53,435 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,436 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,436 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,436 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,436 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,436 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,437 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,437 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,437 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,437 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,437 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,438 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,438 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.335
+LINE 1258: 2020-11-12 16:09:53,438 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.335
+LINE 1258: 2020-11-12 16:09:53,438 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,438 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,439 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,440 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,440 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,440 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,440 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.05
+LINE 1258: 2020-11-12 16:09:53,440 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,441 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,441 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,441 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.05
+LINE 1258: 2020-11-12 16:09:53,441 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,441 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,442 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,443 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,443 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.535
+LINE 1258: 2020-11-12 16:09:53,443 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,444 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:53,444 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,444 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.335
+LINE 1258: 2020-11-12 16:09:53,444 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,444 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.05
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.25
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.05
+LINE 1258: 2020-11-12 16:09:53,445 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.25
+LINE 1258: 2020-11-12 16:09:53,446 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:53,446 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.335
+LINE 1258: 2020-11-12 16:09:53,446 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.535
+LINE 1281: 2020-11-12 16:09:53,446 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=8.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf') with score of 2.050000.
+LINE 1246: 2020-11-12 16:09:58,890 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=6.0.
+LINE 1258: 2020-11-12 16:09:58,891 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,891 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,891 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,891 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,892 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,892 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,892 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,892 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,892 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,893 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,893 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,893 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,893 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.335
+LINE 1258: 2020-11-12 16:09:58,893 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.335
+LINE 1258: 2020-11-12 16:09:58,894 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,894 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,894 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,894 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,894 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,895 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,895 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,895 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,895 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,895 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,896 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,896 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.05
+LINE 1258: 2020-11-12 16:09:58,896 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,896 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,896 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.05
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,897 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,898 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,898 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,898 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,898 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,898 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.535
+LINE 1258: 2020-11-12 16:09:58,899 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,899 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.335
+LINE 1258: 2020-11-12 16:09:58,899 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,899 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.335
+LINE 1258: 2020-11-12 16:09:58,899 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,900 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.05
+LINE 1258: 2020-11-12 16:09:58,900 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,900 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.25
+LINE 1258: 2020-11-12 16:09:58,900 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.335
+LINE 1258: 2020-11-12 16:09:58,900 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.05
+LINE 1258: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.05
+LINE 1258: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.25
+LINE 1258: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.05
+LINE 1258: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.335
+LINE 1258: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.535
+LINE 1281: 2020-11-12 16:09:58,901 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=6.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf') with score of 2.050000.
+LINE 607 : 2020-11-12 16:29:35,965 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93bb013c8>
+LINE 652 : 2020-11-12 16:29:35,970 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:29:35,970 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93bb013c8>
+LINE 822 : 2020-11-12 16:29:35,970 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 16:29:59,246 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93aeca4e0>
+LINE 652 : 2020-11-12 16:29:59,247 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:29:59,247 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93aeca4e0>
+LINE 822 : 2020-11-12 16:29:59,247 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 16:33:10,740 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936dcb390>
+LINE 652 : 2020-11-12 16:33:10,740 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:33:10,740 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936dcb390>
+LINE 822 : 2020-11-12 16:33:10,741 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 16:36:26,423 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934af1278>
+LINE 652 : 2020-11-12 16:36:26,424 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:36:26,424 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934af1278>
+LINE 822 : 2020-11-12 16:36:26,424 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 16:38:19,019 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9348df780>
+LINE 652 : 2020-11-12 16:38:19,019 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:38:19,020 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9348df780>
+LINE 822 : 2020-11-12 16:38:19,020 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 16:38:44,136 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9346db588>
+LINE 652 : 2020-11-12 16:38:44,136 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 16:38:44,137 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9346db588>
+LINE 822 : 2020-11-12 16:38:44,137 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:03:31,340 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9386c2470>
+LINE 652 : 2020-11-12 17:03:31,340 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:03:31,341 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9386c2470>
+LINE 822 : 2020-11-12 17:03:31,341 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:05:42,807 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9392c86a0>
+LINE 652 : 2020-11-12 17:05:42,807 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:05:42,807 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9392c86a0>
+LINE 822 : 2020-11-12 17:05:42,807 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:06:17,613 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93896b438>
+LINE 652 : 2020-11-12 17:06:17,614 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:06:17,614 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93896b438>
+LINE 822 : 2020-11-12 17:06:17,614 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:06:30,493 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa938e2b860>
+LINE 652 : 2020-11-12 17:06:30,493 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:06:30,493 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa938e2b860>
+LINE 822 : 2020-11-12 17:06:30,494 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:07:20,013 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9391a7048>
+LINE 652 : 2020-11-12 17:07:20,014 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:07:20,014 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9391a7048>
+LINE 822 : 2020-11-12 17:07:20,014 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:11:25,622 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939910860>
+LINE 652 : 2020-11-12 17:11:25,622 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:11:25,622 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939910860>
+LINE 822 : 2020-11-12 17:11:25,623 [DEBUG   ] Setting pcolormesh
+LINE 1247: 2020-11-12 17:49:20,634 [WARNING ] No handles with labels found to put in legend.
+LINE 607 : 2020-11-12 17:56:07,801 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936b5add8>
+LINE 652 : 2020-11-12 17:56:07,801 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:56:07,801 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936b5add8>
+LINE 822 : 2020-11-12 17:56:07,802 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:56:28,713 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937528c18>
+LINE 652 : 2020-11-12 17:56:28,714 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:56:28,714 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937528c18>
+LINE 822 : 2020-11-12 17:56:28,715 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:58:01,260 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935feccf8>
+LINE 652 : 2020-11-12 17:58:01,260 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:58:01,261 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935feccf8>
+LINE 822 : 2020-11-12 17:58:01,261 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 17:59:14,565 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934b4c438>
+LINE 652 : 2020-11-12 17:59:14,566 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 17:59:14,566 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934b4c438>
+LINE 822 : 2020-11-12 17:59:14,566 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:19:52,752 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939cf9b00>
+LINE 652 : 2020-11-12 18:19:52,753 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:19:52,753 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939cf9b00>
+LINE 822 : 2020-11-12 18:19:52,753 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:20:06,403 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937cff400>
+LINE 652 : 2020-11-12 18:20:06,403 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:20:06,403 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937cff400>
+LINE 822 : 2020-11-12 18:20:06,403 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:33:16,285 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935d3eef0>
+LINE 652 : 2020-11-12 18:33:16,285 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:33:16,285 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935d3eef0>
+LINE 822 : 2020-11-12 18:33:16,286 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:33:27,674 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934c81898>
+LINE 652 : 2020-11-12 18:33:27,674 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:33:27,675 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934c81898>
+LINE 822 : 2020-11-12 18:33:27,675 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:34:34,225 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939776198>
+LINE 652 : 2020-11-12 18:34:34,225 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:34:34,225 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939776198>
+LINE 822 : 2020-11-12 18:34:34,226 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:35:00,860 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939dedf28>
+LINE 652 : 2020-11-12 18:35:00,861 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:35:00,861 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939dedf28>
+LINE 822 : 2020-11-12 18:35:00,861 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:38:37,487 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9396ee978>
+LINE 652 : 2020-11-12 18:38:37,487 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:38:37,487 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9396ee978>
+LINE 822 : 2020-11-12 18:38:37,488 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:39:57,196 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa938ef1860>
+LINE 652 : 2020-11-12 18:39:57,197 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:39:57,197 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa938ef1860>
+LINE 822 : 2020-11-12 18:39:57,197 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:43:33,874 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94ca6c4e0>
+LINE 652 : 2020-11-12 18:43:33,875 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:43:33,875 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94ca6c4e0>
+LINE 822 : 2020-11-12 18:43:33,875 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:47:46,906 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9368dfa20>
+LINE 652 : 2020-11-12 18:47:46,907 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:47:46,907 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9368dfa20>
+LINE 822 : 2020-11-12 18:47:46,907 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:48:33,132 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9372db278>
+LINE 652 : 2020-11-12 18:48:33,132 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:48:33,133 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9372db278>
+LINE 822 : 2020-11-12 18:48:33,133 [DEBUG   ] Setting pcolormesh
+LINE 1246: 2020-11-12 18:48:33,294 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=9.0.
+LINE 1258: 2020-11-12 18:48:33,295 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,295 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,295 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,296 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,296 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,296 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,296 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,296 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,297 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,297 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,297 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,297 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,297 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+LINE 1258: 2020-11-12 18:48:33,298 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+LINE 1258: 2020-11-12 18:48:33,298 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,298 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,298 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,298 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,299 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,300 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,300 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+LINE 1258: 2020-11-12 18:48:33,300 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,300 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,300 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,301 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+LINE 1258: 2020-11-12 18:48:33,301 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,301 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,301 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,301 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,302 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,302 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,302 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,302 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,302 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,303 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+LINE 1258: 2020-11-12 18:48:33,303 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,303 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:48:33,303 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,303 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+LINE 1258: 2020-11-12 18:48:33,304 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,304 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+LINE 1258: 2020-11-12 18:48:33,304 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,304 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+LINE 1258: 2020-11-12 18:48:33,304 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:48:33,305 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:48:33,305 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+LINE 1258: 2020-11-12 18:48:33,305 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+LINE 1258: 2020-11-12 18:48:33,305 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:48:33,305 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+LINE 1258: 2020-11-12 18:48:33,306 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+LINE 1281: 2020-11-12 18:48:33,306 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=9.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+LINE 607 : 2020-11-12 18:48:52,545 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93ad7af28>
+LINE 652 : 2020-11-12 18:48:52,545 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:48:52,546 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93ad7af28>
+LINE 822 : 2020-11-12 18:48:52,546 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:02,275 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935a9cc88>
+LINE 652 : 2020-11-12 18:49:02,276 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:02,276 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa935a9cc88>
+LINE 822 : 2020-11-12 18:49:02,276 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:15,898 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939775588>
+LINE 652 : 2020-11-12 18:49:15,898 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:15,898 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939775588>
+LINE 822 : 2020-11-12 18:49:15,899 [DEBUG   ] Setting pcolormesh
+LINE 1246: 2020-11-12 18:49:16,041 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=7.0.
+LINE 1258: 2020-11-12 18:49:16,042 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,042 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,043 [DEBUG   ] findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,043 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,043 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,043 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,043 [DEBUG   ] findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,044 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 2.05
+LINE 1258: 2020-11-12 18:49:16,045 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 3.05
+LINE 1258: 2020-11-12 18:49:16,045 [DEBUG   ] findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,045 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,045 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,045 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,046 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,046 [DEBUG   ] findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,046 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,046 [DEBUG   ] findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,046 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 2.335
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,047 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,048 [DEBUG   ] findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 3.335
+LINE 1258: 2020-11-12 18:49:16,048 [DEBUG   ] findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,048 [DEBUG   ] findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,048 [DEBUG   ] findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,048 [DEBUG   ] findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'Humor Sans' (Humor-Sans.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,049 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+LINE 1258: 2020-11-12 18:49:16,050 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,050 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+LINE 1258: 2020-11-12 18:49:16,050 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,050 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 5.05
+LINE 1258: 2020-11-12 18:49:16,051 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,051 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 5.335
+LINE 1258: 2020-11-12 18:49:16,051 [DEBUG   ] findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,051 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+LINE 1258: 2020-11-12 18:49:16,051 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 4.335
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 4.05
+LINE 1258: 2020-11-12 18:49:16,052 [DEBUG   ] findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+LINE 1281: 2020-11-12 18:49:16,053 [DEBUG   ] findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=7.0 to DejaVu Sans ('/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 2.050000.
+LINE 607 : 2020-11-12 18:49:24,284 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93b2fac18>
+LINE 652 : 2020-11-12 18:49:24,285 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:24,285 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93b2fac18>
+LINE 822 : 2020-11-12 18:49:24,285 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:34,606 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93906b518>
+LINE 652 : 2020-11-12 18:49:34,606 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:34,607 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93906b518>
+LINE 822 : 2020-11-12 18:49:34,607 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:44,039 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93abb20b8>
+LINE 652 : 2020-11-12 18:49:44,039 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:44,039 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93abb20b8>
+LINE 822 : 2020-11-12 18:49:44,040 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:51,205 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937723cc0>
+LINE 652 : 2020-11-12 18:49:51,205 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:51,206 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937723cc0>
+LINE 822 : 2020-11-12 18:49:51,206 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:49:58,004 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93728e8d0>
+LINE 652 : 2020-11-12 18:49:58,004 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:49:58,005 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93728e8d0>
+LINE 822 : 2020-11-12 18:49:58,005 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:50:02,415 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93a7a6518>
+LINE 652 : 2020-11-12 18:50:02,415 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:50:02,416 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93a7a6518>
+LINE 822 : 2020-11-12 18:50:02,416 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:54:52,901 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93aa55160>
+LINE 652 : 2020-11-12 18:54:52,902 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:54:52,902 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93aa55160>
+LINE 822 : 2020-11-12 18:54:52,903 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:55:12,752 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9379859e8>
+LINE 652 : 2020-11-12 18:55:12,753 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:55:12,753 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9379859e8>
+LINE 822 : 2020-11-12 18:55:12,753 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:56:50,632 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93d0435c0>
+LINE 652 : 2020-11-12 18:56:50,633 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:56:50,633 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93d0435c0>
+LINE 822 : 2020-11-12 18:56:50,633 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 18:57:57,173 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936b3f208>
+LINE 652 : 2020-11-12 18:57:57,174 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 18:57:57,174 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936b3f208>
+LINE 822 : 2020-11-12 18:57:57,174 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:00:04,519 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9373fccf8>
+LINE 652 : 2020-11-12 19:00:04,519 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:00:04,520 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9373fccf8>
+LINE 822 : 2020-11-12 19:00:04,520 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:00:18,129 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939b0c5f8>
+LINE 652 : 2020-11-12 19:00:18,129 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:00:18,129 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa939b0c5f8>
+LINE 822 : 2020-11-12 19:00:18,129 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:00:31,534 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936e1c0f0>
+LINE 652 : 2020-11-12 19:00:31,534 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:00:31,535 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa936e1c0f0>
+LINE 822 : 2020-11-12 19:00:31,535 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:03:25,976 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937088c18>
+LINE 652 : 2020-11-12 19:03:25,976 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:03:25,977 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937088c18>
+LINE 822 : 2020-11-12 19:03:25,977 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:03:38,939 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9396ba4a8>
+LINE 652 : 2020-11-12 19:03:38,939 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:03:38,939 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9396ba4a8>
+LINE 822 : 2020-11-12 19:03:38,940 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:03:54,313 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93b3550f0>
+LINE 652 : 2020-11-12 19:03:54,314 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:03:54,314 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93b3550f0>
+LINE 822 : 2020-11-12 19:03:54,314 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:07:37,302 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9399a37b8>
+LINE 652 : 2020-11-12 19:07:37,302 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:07:37,303 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9399a37b8>
+LINE 822 : 2020-11-12 19:07:37,303 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:08:26,754 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93a81b400>
+LINE 652 : 2020-11-12 19:08:26,755 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:08:26,755 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93a81b400>
+LINE 822 : 2020-11-12 19:08:26,755 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:08:36,054 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937a52c88>
+LINE 652 : 2020-11-12 19:08:36,055 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:08:36,055 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937a52c88>
+LINE 822 : 2020-11-12 19:08:36,055 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:09:04,875 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9378245c0>
+LINE 652 : 2020-11-12 19:09:04,876 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:09:04,876 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9378245c0>
+LINE 822 : 2020-11-12 19:09:04,876 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:12:52,832 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93acd3940>
+LINE 652 : 2020-11-12 19:12:52,833 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:12:52,833 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa93acd3940>
+LINE 822 : 2020-11-12 19:12:52,833 [DEBUG   ] Setting pcolormesh
+LINE 813 : 2020-11-12 19:13:21,439 [DEBUG   ] Starting new HTTPS connection (1): byu.box.com:443
+LINE 393 : 2020-11-12 19:13:21,659 [DEBUG   ] https://byu.box.com:443 "GET /shared/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 301 None
+LINE 393 : 2020-11-12 19:13:21,855 [DEBUG   ] https://byu.box.com:443 "GET /public/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 301 None
+LINE 813 : 2020-11-12 19:13:21,858 [DEBUG   ] Starting new HTTPS connection (1): byu.app.box.com:443
+LINE 393 : 2020-11-12 19:13:22,422 [DEBUG   ] https://byu.app.box.com:443 "GET /public/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 302 None
+LINE 813 : 2020-11-12 19:13:22,431 [DEBUG   ] Starting new HTTPS connection (1): public.boxcloud.com:443
+LINE 393 : 2020-11-12 19:13:22,820 [DEBUG   ] https://public.boxcloud.com:443 "GET /d/1/b1!uUkRdmsoBaLX5fukvCNSXlo-tgwIGemnUxCE0CHRq5JIS2ZpDaFnnczekTNowTghViwYwPGQr3-ESRVdQtbY4d7ceB6MBQ-bF4w4smrhJbVAIYkN-JrEI0QZCRm8D23vLNf1Qq7MOTDl5mgCPKqZ9PK7_AisaatqrJ4A_b_btSb1d9Mi74gDhe_YN9IhKOQejE95-cum7OCTK0vXU2NFD_SJk5merhod40ulnYBQOS1qc3xjhP-Dxa7Dx8knQ5BXSk_HgFWqf63a3eJCCwKxLaJMUMOHnoHUhW-XZCA5BOMa3LI4goAuC1t_RJMZqjX37fCnBuNp_RCcI80uIUmBC5HdNFI2sirR59r17OMRkXtBu5f9To-W0YOfBIkkUfwdhFLRqOGqX0Ja0J4aznVuE4eZjbFkiCxcYylBDJJCtOfjwaN9BxU5HYCOO7Cl5mg0kXsjmC1C1c_Z4Exf8xWx1NXQ3feaDJeYcyVbi5lc8yr7HLIjjx1fPwk7kuyCgXxOBUtdJmqVBcpjQQb68b5l3infLmYUGWoY9toARMXMOOV7bGHNUG16Qb773NW3hVlST1kfn4utRkOOCIMyVypX9F1_W3aEPPcyLAQdjIuzCTwWDRXV5jH-pKoHi23XaYEC1JhYKD8z3yrltvz8LxAoGJaXEZAoN_hOcXKP-VaaldCBnX-2RrNtu_RhuqlUDrAWTOwroFURJ0fxO5hkBXcDxhRZ3O655tpiM9eb7yjDFnDusflcFbSWRkHqUnShuW6xt5Ps8f3Omdzyt1NftrPCfLaHQn6HT_jp-14g9Zu2w3RPkJOy0yTyBDe-U1GrnU3ZSuWFhT9YyXRWYFcPnRdJiI420PoISL9JBCMY-2Tvit8kHwgwfk_RxG-k7PabllrK0MjioW5rEP2yWQtoyb6_Rt3vHCeh5Yc0iCAFVhF88f_5HI6Q_7C5HhegFG0CSJ8wcvRBZT1G_5yBXtq6pDT8X7HDs5KgESrOwncd9aA5zqRcQMC0DDyO7yaRcEykyUXDX5U-VshIvyR25y78jWu27FjRtGbCK_AFvNwyJTayGdjOnGCn3gPDQzkdJbgKLtRXZnEmYi4R8JrdUZFZ0wlQ3qDSKynsf9O1ofq80AWdgERqJ6lIWzQ9sHaTfxU2tQIbuy3YgDGFja8SzV8wpNEEp4qcGYniVsiL5e76qni8kjpa56dWr6omnfMG-H9ghsyqF3Z8uzY5XfBiqgg8mLXcPDFoM4y3_0PfXAJ628Ul0jBaSkbgVnI0pVX3LQchlgHICFqYYc5TtdTEuUD2AIa4ehJ2GXWNuhxjD6mmCmRqzUuLefMh9LOryNsze5mkcUHpkEYtnm34uGyj8mIcLflQJCBoJchuW7qE3tpgzdq4NUw./download HTTP/1.1" 200 32
+LINE 813 : 2020-11-12 19:13:22,941 [DEBUG   ] Starting new HTTPS connection (1): byu.box.com:443
+LINE 393 : 2020-11-12 19:13:23,146 [DEBUG   ] https://byu.box.com:443 "GET /shared/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 301 None
+LINE 393 : 2020-11-12 19:13:23,353 [DEBUG   ] https://byu.box.com:443 "GET /public/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 301 None
+LINE 813 : 2020-11-12 19:13:23,355 [DEBUG   ] Starting new HTTPS connection (1): byu.app.box.com:443
+LINE 393 : 2020-11-12 19:13:23,911 [DEBUG   ] https://byu.app.box.com:443 "GET /public/static/ahwu7p01mjotudtaop1wtkiq5kek8tj3.txt HTTP/1.1" 302 None
+LINE 813 : 2020-11-12 19:13:23,916 [DEBUG   ] Starting new HTTPS connection (1): public.boxcloud.com:443
+LINE 393 : 2020-11-12 19:13:24,135 [DEBUG   ] https://public.boxcloud.com:443 "GET /d/1/b1!BWqC3ReCEAM1VPby_T63b87SQXJTWEzdlYyWZjes_HuRaWUjxT1GaSlwXtCNr9Gn5dXvL4AqFv863vAJJ2Eqxj3K8MfnZD8RbbnklaU_kXW3A5OXUlPYLniRTM_asQM6LWfwB-HWEH7r_hc_Rq4cn35kq_JDL_OtKFBR7AuXAxHH7VvHy9dULVeS61n35QUnjyrSngefb0Wf4S-VSsJhZPpgE8wS4MnbJaZiGjhuZgCpUaHlkUUoEPEWGjnacoHEiANJpjfOBEc_CPyqzj0yCUf0LsbPwmNg1bMALrfjvSUxmr7JQ59YfZZ6SRt00-Z_pNZFujasz3W9RFWCXwHM9u5MmTEEfcHdIDTFrvZKv_hjSIbmeTDFInosLE_Of08p4_dz98w45eYu0sIIukXzcRgksI2mGqZ7E_95FKnO20Gttt1Mj6ygemZFjGmU8vqDoPmXct3E4L-YsStwmUhcxHEG5-FN5XmySygnzX2oogRP-ha8k0pl4QaLl8fl05ckyy18iD8f6ufejOC1MtNS_TSPupKU1B1Vx5FUx3p_FZ3WzzNSxFllG5avhRy_pXplhJ07_9SZJp5-uiU0ipZJVpkQkLN2dpEo8rE-dgX0o3HsbMC9WIfS-r1hr68idpP8GrKWzvKOdxQj4psl6ZwWM5Ig8WARTh2P1BdrcpwQPcls9anGLyrTof7loCP7rQ_Et9174o9fdKgMS_hRdTBLtje0-JP9ck7reDnbdxTm1jdkoBQk0brqpuGQ6KmVnTXSpPk2j_518CNt361X6-ZuwNh5vf0kBhSgcmNpu40Jh4zSnos8bW7W6KtICzoFi557_YxB7WRNW-JxXoZhKtsV3czAHGm4pkMYKdI4g1Wjy6hYwUV9b0jq9FPGpBPo18_A2e_wUFt9pIw2WPjR7p23P9Su3MxjCHGZmtCtfrkQ1x6nQypCTlePDE7XgU1jOLyuE_rO9mnuuCPvVaHToOjvs6BWSp82msnvSxjOesQ1nD1ziQwkiTVjh1HkGHJv0bM61RBu10gBosATfIO5Jy6j0ueDxFHqDqq6xDeUgpTw8dT_Z0ddfMDbKxDQowDZcV7PYJeIfnW-k7SSGaiUvtjU0QlCvQL9ZkFM3Ci33JAUdEkWMCGiZUnuKUBEvxwN0r7cok1-ugiBF2i23wIDto79kCEhoaPDdfLppLArhZ055CcQm4or5Yy2190bh_tz5wAr2-dJzwAtRuvPz1o6pwOPj00DavDz1F46MiA7LYorrymjpkzXhiS3b5LP5iN9OEPsNDTxMTS2VLDC2jP3ed99f64UwZEegcM1sGKk7S36atL3fKxbjeoQc8ztsPd9m7sY9R8bhgEruAbAUcnHnG_puhEs_x9yCojoVhXUncFsFb0./download HTTP/1.1" 200 32
+LINE 607 : 2020-11-12 19:13:31,899 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94f05b400>
+LINE 652 : 2020-11-12 19:13:31,899 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:13:31,899 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94f05b400>
+LINE 822 : 2020-11-12 19:13:31,900 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:13:33,525 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94ea04470>
+LINE 652 : 2020-11-12 19:13:33,525 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:13:33,526 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa94ea04470>
+LINE 822 : 2020-11-12 19:13:33,526 [DEBUG   ] Setting pcolormesh
+LINE 501 : 2020-11-12 19:13:35,384 [INFO    ] Parsing data files for GSEA.............................
+LINE 205 : 2020-11-12 19:13:35,386 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2020-11-12 19:13:35,548 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 307 171
+LINE 813 : 2020-11-12 19:13:35,550 [DEBUG   ] Starting new HTTPS connection (1): maayanlab.cloud:443
+LINE 393 : 2020-11-12 19:13:35,921 [DEBUG   ] https://maayanlab.cloud:443 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 166 : 2020-11-12 19:13:36,009 [INFO    ] Enrichr library gene sets already downloaded in: /root/.cache/gseapy, use local file
+LINE 135 : 2020-11-12 19:13:37,285 [INFO    ] 0002 gene_sets have been filtered out when max_size=500 and min_size=15
+LINE 505 : 2020-11-12 19:13:37,285 [INFO    ] 0048 gene_sets used for further statistical testing.....
+LINE 506 : 2020-11-12 19:13:37,285 [INFO    ] Start to run GSEA...Might take a while..................
+LINE 465 : 2020-11-12 19:13:37,286 [DEBUG   ] Start to compute enrichment scores......................
+LINE 489 : 2020-11-12 19:13:37,286 [DEBUG   ] Start to compute es and esnulls........................
+LINE 652 : 2020-11-12 19:13:54,801 [DEBUG   ] Start to compute pvals..................................
+LINE 656 : 2020-11-12 19:13:54,802 [DEBUG   ] Start to compute nes and nesnull........................
+LINE 660 : 2020-11-12 19:13:54,805 [DEBUG   ] Start to compute fdrs..................................
+LINE 634 : 2020-11-12 19:13:54,810 [DEBUG   ] Statistical testing finished.............................
+LINE 514 : 2020-11-12 19:13:54,811 [INFO    ] Start to generate gseapy reports, and produce figures...
+LINE 677 : 2020-11-12 19:13:55,465 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:13:55,640 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:13:55,640 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:13:55,641 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:13:55,686 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:13:55,686 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:13:56,374 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:13:56,547 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:13:56,548 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:13:56,548 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:13:56,593 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:13:56,594 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:13:57,283 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:13:57,457 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:13:57,458 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:13:57,458 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:13:57,503 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:13:57,503 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:13:58,187 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:13:58,363 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:13:58,363 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:13:58,364 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:13:58,409 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:13:58,409 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:13:59,108 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:13:59,302 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:13:59,303 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:13:59,303 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:13:59,354 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:13:59,354 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:00,042 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:00,230 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:00,230 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:00,231 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:00,283 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:00,284 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:01,313 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:01,593 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:01,594 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:01,594 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:01,648 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:01,649 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:02,713 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:02,976 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:02,977 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:02,977 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:03,020 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:03,021 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:03,712 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:03,891 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:03,892 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:03,892 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:03,937 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:03,938 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:04,626 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:04,849 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:04,850 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:04,850 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:04,894 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:04,895 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:05,589 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:05,794 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:05,794 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:05,795 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:05,837 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:05,838 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:06,561 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:06,744 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:06,745 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:06,745 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:06,790 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:06,791 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:07,511 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:07,690 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:07,691 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:07,691 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:07,735 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:07,736 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:09,316 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:09,503 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:09,504 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:09,504 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:09,548 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:09,548 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:10,268 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:10,453 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:10,453 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:10,453 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:10,498 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:10,499 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:11,197 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:11,386 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:11,387 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:11,387 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:11,431 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:11,431 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:12,117 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:12,321 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:12,322 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:12,322 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:12,372 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:12,372 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:13,698 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:13,880 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:13,881 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:13,881 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:13,926 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:13,927 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:14,634 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:14,828 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:14,829 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:14,829 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:14,873 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:14,874 [DEBUG   ] Writing TrueType font.
+LINE 677 : 2020-11-12 19:14:15,579 [DEBUG   ] Assigning font /b'F1' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+LINE 677 : 2020-11-12 19:14:15,768 [DEBUG   ] Assigning font /b'F2' = '/usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+LINE 719 : 2020-11-12 19:14:15,769 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf.
+LINE 726 : 2020-11-12 19:14:15,769 [DEBUG   ] Writing TrueType font.
+LINE 719 : 2020-11-12 19:14:15,814 [DEBUG   ] Embedding font /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf.
+LINE 726 : 2020-11-12 19:14:15,815 [DEBUG   ] Writing TrueType font.
+LINE 526 : 2020-11-12 19:14:15,880 [INFO    ] Congratulations. GSEApy runs successfully................
+
+LINE 607 : 2020-11-12 19:14:16,107 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9358d0dd8>
+LINE 652 : 2020-11-12 19:14:16,108 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:14:16,108 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa9358d0dd8>
+LINE 822 : 2020-11-12 19:14:16,108 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:14:17,169 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933c339b0>
+LINE 652 : 2020-11-12 19:14:17,170 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:14:17,170 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933c339b0>
+LINE 822 : 2020-11-12 19:14:17,171 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:15:34,580 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933f832e8>
+LINE 652 : 2020-11-12 19:15:34,580 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:15:34,580 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933f832e8>
+LINE 822 : 2020-11-12 19:15:34,581 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:17:02,339 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934d4a7b8>
+LINE 652 : 2020-11-12 19:17:02,340 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:17:02,340 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa934d4a7b8>
+LINE 822 : 2020-11-12 19:17:02,340 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:17:19,424 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933be3278>
+LINE 652 : 2020-11-12 19:17:19,424 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:17:19,424 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933be3278>
+LINE 822 : 2020-11-12 19:17:19,425 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:17:35,509 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933b1b320>
+LINE 652 : 2020-11-12 19:17:35,509 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:17:35,510 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa933b1b320>
+LINE 822 : 2020-11-12 19:17:35,510 [DEBUG   ] Setting pcolormesh
+LINE 607 : 2020-11-12 19:17:49,532 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937181630>
+LINE 652 : 2020-11-12 19:17:49,532 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 653 : 2020-11-12 19:17:49,533 [DEBUG   ] locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x7fa937181630>
+LINE 822 : 2020-11-12 19:17:49,533 [DEBUG   ] Setting pcolormesh
