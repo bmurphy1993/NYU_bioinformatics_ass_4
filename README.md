@@ -2,7 +2,7 @@
 Computational Proteomics
 
 1. Open Assn_4_Group_7_Final.ipynb in Google colab or jupyter notebooks.
-2. Replace any instances of the placeholder, "<INSERT PERSONAL GOOGLE DRIVE DIRECTORY>" with the Google Drive directory where you would like to output the results of the GSEA Prerank analysis.
+2. Replace any instances of the placeholder, <INSERT PERSONAL GOOGLE DRIVE DIRECTORY> with the Google Drive directory where you would like to output the results of the GSEA Prerank analysis.
 3. Run all steps of the notebook.
 4. The first code block will mount your Google Drive. Follow the steps given when this block runs.
   
